@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="topbar">
+        <div class="title">
+          <h1>Snake</h1>
+          <p class="subtitle">Setas ou WASD · Espaço: pausar</p>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-label">Score</div>
+            <div class="stat-value" id="score">0</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">Level</div>
+            <div class="stat-value" id="level">1</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">High</div>
+            <div class="stat-value" id="highScore">0</div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button id="startBtn" class="btn primary" type="button">Iniciar</button>
+          <button id="pauseBtn" class="btn" type="button" disabled>Pausar</button>
+        </div>
+      </header>
+
+      <section class="stage" aria-label="Jogo">
+        <div class="canvas-wrap">
+          <canvas id="game" aria-label="Tabuleiro do Snake" role="img"></canvas>
+          <div id="overlay" class="overlay" aria-live="polite">
+            <div class="overlay-card">
+              <div id="overlayTitle" class="overlay-title">Snake</div>
+              <div id="overlayText" class="overlay-text">Pressione Iniciar ou Enter</div>
+              <div class="overlay-hint">Enter: iniciar/reiniciar · Espaço: pausar</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="src/main.js"></script>
+  </body>
+</html>
