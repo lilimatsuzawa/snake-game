@@ -303,7 +303,7 @@ function render() {
     const fx = state.food.x * s;
     const fy = state.food.y * s;
 
-    ctx.fillStyle = "#ff5a7a";
+    ctx.fillStyle = "#00ff1aff";
     ctx.beginPath();
     ctx.arc(fx + s / 2, fy + s / 2, Math.max(4, s * 0.32), 0, Math.PI * 2);
     ctx.fill();
@@ -314,7 +314,7 @@ function render() {
     const x = p.x * s;
     const y = p.y * s;
 
-    ctx.fillStyle = i === 0 ? "#36d17b" : "#7cf7a1";
+    ctx.fillStyle = i === 0 ? "#e817ffff" : "#ffc400ff";
     const pad = i === 0 ? 3 : 4;
     ctx.fillRect(x + pad, y + pad, s - pad * 2, s - pad * 2);
   }
