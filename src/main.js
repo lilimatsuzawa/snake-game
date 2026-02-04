@@ -284,7 +284,7 @@ function render() {
   ctx.fillStyle = "rgba(8, 12, 24, 0.95)";
   ctx.fillRect(0, 0, w, h);
 
-  ctx.strokeStyle = "rgba(255,255,255,0.06)";
+  ctx.strokeStyle = "rgba(248, 179, 179, 1)";
   ctx.lineWidth = 1;
   for (let x = 0; x <= CONFIG.cols; x += 1) {
     ctx.beginPath();
@@ -303,7 +303,7 @@ function render() {
     const fx = state.food.x * s;
     const fy = state.food.y * s;
 
-    ctx.fillStyle = "#00ff1aff";
+    ctx.fillStyle = "#06e6e3e2";
     ctx.beginPath();
     ctx.arc(fx + s / 2, fy + s / 2, Math.max(4, s * 0.32), 0, Math.PI * 2);
     ctx.fill();
@@ -314,7 +314,7 @@ function render() {
     const x = p.x * s;
     const y = p.y * s;
 
-    ctx.fillStyle = i === 0 ? "#e817ffff" : "#ffc400ff";
+    ctx.fillStyle = i === 0 ? "#ff0000ff" : "#ffc400ff";
     const pad = i === 0 ? 3 : 4;
     ctx.fillRect(x + pad, y + pad, s - pad * 2, s - pad * 2);
   }

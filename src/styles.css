@@ -4,10 +4,10 @@
   --panel-strong: rgba(170, 170, 170, 0.897);
   --text: #e9edf7;
   --muted: rgba(233, 237, 247, 0.7);
-  --snake: #7cf7a1;
+  --snake: #ffe600;
   --snake-head: #ffee04;
   --food: #aa00ff;
-  --grid: rgba(255, 255, 255, 0.08);
+  --grid: rgba(246, 228, 228, 0.08);
   --shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
 }
 
